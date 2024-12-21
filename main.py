@@ -16,7 +16,6 @@ collection = db["testpidata"]  # Collection name
 # Pydantic model for incoming data
 class Item(BaseModel):
     name: str
-    description: str
 
 # Helper function to convert MongoDB ObjectId to string
 def serialize_item(item: Dict) -> Dict:
